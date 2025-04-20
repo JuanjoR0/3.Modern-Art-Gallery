@@ -1,0 +1,1079 @@
+$black: #151515;
+$white: #fff;
+$orange: #d5966c;
+$gray: #444;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: $black;
+  background-color: $white;
+}
+
+// ---------- DESKTOP ----------
+@media (min-width: 1025px){
+  
+.hero {
+  display: flex;
+  height: 100vh;
+  margin-bottom: 50px;
+
+
+  &__content {
+    flex: 1;
+    color: $white;
+    display: flex;
+    flex-direction: row;
+
+
+    .hero_black{
+      background-color: $black;
+      width: 500px;
+    }
+
+    .hero__image {
+      img {
+        width: 130%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    & .hero__title {
+      position: absolute;
+      top: 20%;
+      left: 17%;
+      font-size: 5rem;
+      line-height: 1.1;
+      font-family: 'Big Shoulders Display', sans-serif;
+      font-weight: 700;
+    }
+
+    & .hero__description {
+      position: absolute;
+      top: 20%;
+      left: 65%;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: #444444;
+      line-height: 1.6;
+      width: 310px;
+    }
+
+    & .hero__button {
+      top: 50%;
+      left: 65%;
+      position: absolute;
+      background-color: $black;
+      color: $white;
+      text-decoration: none;
+      padding: 1.4rem 2rem;
+      font-weight: bold;
+
+      .arrow {
+        background-color: $orange;
+        position: absolute;
+        top:0;
+        left: 90%;
+        padding: 1.4rem;
+      }
+    }
+  }
+
+  
+
+}
+
+.gallery-intro {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+
+  .text-block {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 5%;
+
+    h2 {
+      margin-left: 20%;
+      margin-bottom: 40px;
+      font-size: 3.5rem;
+      width: 250px;
+      line-height: 1.1;
+      font-family: 'Big Shoulders Display', sans-serif;
+      font-weight: 700;
+    }
+
+    p {
+      color: $gray;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+      margin-left: 20%;
+      width: 250px;
+    }
+  }
+
+  .gallery-intro-img{
+    width: 50%;
+    
+    img {
+      width: 100%;
+      margin-top: 1rem;
+      margin-left: -10rem;
+    }
+  }
+
+  
+}
+
+.gallery-images {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  width: 100%;
+  height: 800px;
+
+  .gallery-images-left{
+    width: 50%;
+    margin-left: 16%;
+    img {
+      height: 650px;
+      object-fit: cover;
+    }
+  }
+
+  .gallery-images-right{
+    width: 50%;
+
+    img {
+      width: 420px;
+    }
+
+    .inspiration-block {
+      width: 420px;
+      height: 320px;
+      margin-top: 30px;
+      background-color: $black;
+      color: $white;
+      padding: 2rem;
+  
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-size: 3.5rem;
+        width: 250px;
+        line-height: 1.1;
+        font-family: 'Big Shoulders Display', sans-serif;
+        font-weight: 700;
+      }
+  
+      p {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: #ccc;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  
+
+  
+}
+
+.footer {
+  background-color: $black;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4rem;
+  height: auto;
+
+  &__brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    width: 170px;
+    margin-left: 190px;
+  }
+
+  &__text {
+    max-width: 380px;
+    text-align: left;
+    margin-right: 100px;
+    margin-top: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ccc;
+
+  }
+
+  &__socials {
+    margin-right: 150px;
+
+    img{
+     margin-left: 18px;
+
+    }
+    
+  }
+}
+
+.location{
+
+  .footer{
+    background-color: $orange;
+    color: $black;
+
+    p{
+      color: $black;
+    }
+
+    &__brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      width: 500px;
+      margin-left: 190px;
+    }
+
+    &__socials {
+      margin-bottom: 30px;
+      display: flex;
+  
+      img{
+        width: 18px;
+      }
+      
+    }
+  }
+
+  .loc_header{
+    display: flex;
+    height: 100vh;
+  
+    .loc_header_content{
+      display: flex;
+      height: 100vh;
+      margin-bottom: 50px;
+  
+      .botton_back{
+        top: 0;
+        left: 10%;
+        position: absolute;
+        background-color: $black;
+        color: $white;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        font-weight: bold;
+  
+        .arrow {
+          background-color: $orange;
+          position: absolute;
+          top:0px;
+          left: -10%;
+          padding: 1rem;
+        }
+      }
+  
+      .fondo {
+        width: 100%;
+        object-fit: cover;
+      }
+  
+      .localizador{
+        position: absolute;
+        top: 44%;
+        left: 48%;
+      }
+    }
+  }
+  
+  .loc_main{
+    position: relative;
+    
+    .loc_main_content{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: 'Big Shoulders Display', sans-serif;
+      font-weight: 700;
+      color: $white;
+      background-color: $black;
+      height: 550px;
+      align-items: center;
+  
+      .titulo{
+        width: 50%;
+        margin-left: 15%;
+        font-weight: bold;
+        font-size: 4.5rem;
+        margin-bottom: 15%;
+      }
+  
+      .contenido{
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top:20%;
+  
+        h2{
+          color: $orange;
+          margin-bottom: 20px;
+        }
+  
+        p{
+          font-family: 'Outfit', sans-serif;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.5;
+          color:rgba(255, 255, 255, 0.792);
+        }
+  
+        .content_top{
+          margin-bottom: 20px;
+        }
+        .content_bottom{
+          width: 380px;
+        }
+        
+       
+      }
+    }
+  }
+  
+  
+}
+}
+
+// ---------- TABLET ----------
+@media (max-width: 1024px) and (min-width: 768px) {
+
+  .hero {
+    display: flex;
+    height: 100vh;
+    margin-bottom: 50px;
+    position: relative;
+
+    .hero__content {
+      display: flex;
+      flex-direction: row;
+  
+      .hero_black {
+        display: none;
+      }
+  
+      .hero__title {
+        position: absolute;
+        top: 20%;
+        left: 55%;
+        font-size: 5.5rem;
+        line-height: 1.1;
+        font-family: 'Big Shoulders Display', sans-serif;
+        font-weight: bold;
+        z-index: 2;
+      }
+  
+      .hero__description {
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.3rem;
+        color: #444444;
+        line-height: 1.6;
+        width: 400px;
+        z-index: 2;
+      }
+  
+      .hero__button {
+        top: 80%;
+        left: 55%;
+        position: absolute;
+        background-color: $black;
+        color: $white;
+        text-decoration: none;
+        padding: 2rem;
+        font-weight: bold;
+        font-size: 1.6rem;
+        z-index: 2;
+        font-family: 'Big Shoulders Display', sans-serif;
+        font-weight: 700;
+        letter-spacing: 5px;
+
+        .arrow {
+          background-color: $orange;
+          position: absolute;
+          top:0;
+          left: 95%;
+          padding: 2rem;
+          font-family: 'Helvetica Neue', sans-serif;
+        }
+        
+      }
+  
+      .hero__image{
+        position: absolute;
+        z-index: 1;
+  
+        img {
+          width: 60%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+      
+    }
+  }
+  
+
+  .gallery-intro {
+    position: relative;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+
+    .text-block{
+      width: 40%;
+      margin-top: 5%;
+      
+
+      h2{
+        margin-bottom: 40px;
+        font-size: 4rem;
+        width: 250px;
+        line-height: 1;
+        font-family: 'Big Shoulders Display', sans-serif;
+        font-weight: 900;
+      } 
+      p {
+        color: $gray;
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.4rem;
+        line-height: 1.4;
+        width: 280px;
+      }
+    }
+    
+    .gallery-intro-img {
+      width: 60%;
+      margin-left: 0;
+      text-align: center;
+
+      img{
+        width: 100%;
+        height: 120%;
+        object-fit: cover;
+      }
+
+    }
+  }
+
+  .gallery-images {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    width: 100%;
+    height: 800px;
+    
+    .gallery-images-left{
+      width:60%;
+      margin-right: 30px;
+      img {
+       height: 100%;
+       width: 100%;
+       object-fit: cover;
+      }
+
+    } 
+    
+    .gallery-images-right {
+      width: 40%;
+      
+      img {
+        width: 100%;
+        height: 48%;
+        object-fit: cover;
+      }
+
+      .inspiration-block {
+        width: 100%;
+        height: 48%;
+        margin-top: 30px;
+        background-color: $black;
+        color: $white;
+        padding: 2rem;
+
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+          font-size: 3.5rem;
+          width: 250px;
+          line-height: 1.1;
+          font-family: 'Big Shoulders Display', sans-serif;
+          font-weight: 700;
+        }
+    
+        p {
+          font-family: 'Outfit', sans-serif;
+          font-weight: 400;
+          font-size: 1.4rem;
+          color: #ccc;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: $black;
+    margin-top: 40px;
+    color: $white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem;
+    height: auto;
+
+    &__brand{
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      width: 200px;
+    }
+
+    &__text {
+      width: 280px;
+      text-align: left;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #ccc;
+    }
+    &__socials {
+      
+      display: flex;
+  
+      img{
+       margin-left: 18px;
+       width: 20px;
+      }
+      
+    }
+  }
+
+  .location{
+
+    .footer{
+      background-color: $orange;
+      color: $black;
+  
+      p{
+        color: $black;
+        font-size: 1.2rem;
+        width:340px;
+      }
+  
+      &__brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        width: 200px;
+       
+      }
+  
+      &__socials {
+        margin-bottom: 30px;
+        display: flex;
+    
+        img{
+          width: 18px;
+        }
+        
+      }
+    }
+  
+    .loc_header{
+      display: flex;
+      height: 100vh;
+    
+      .loc_header_content{
+        display: flex;
+        height: 100vh;
+        margin-bottom: 50px;
+    
+        .botton_back{
+          top: 0;
+          left: 10%;
+          position: absolute;
+          background-color: $black;
+          color: $white;
+          font-size: 1.4rem;
+          text-decoration: none;
+          padding: 2.5rem 3.5rem;
+          font-weight: bold;
+    
+          .arrow {
+            background-color: $orange;
+            position: absolute;
+            top:0px;
+            left: -20%;
+            padding: 2.5rem;
+          }
+        }
+    
+        .fondo {
+          width: 100%;
+          object-fit: cover;
+        }
+    
+        .localizador{
+          position: absolute;
+          top: 45%;
+          left: 46%;
+        }
+      }
+    }
+    
+    .loc_main{
+      position: relative;
+      background-color: $black;
+      .loc_main_content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: 'Big Shoulders Display', sans-serif;
+        font-weight: 700;
+        color: $white;
+        
+        height: 550px;
+        align-items: center;
+    
+        .titulo{
+          width: 50%;
+          margin-left: 15%;
+          font-weight: bold;
+          font-size: 4.5rem;
+          margin-bottom: 15%;
+        }
+    
+        .contenido{
+          width: 50%;
+          position: absolute;
+          left: 50%;
+          top:20%;
+    
+          h2{
+            color: $orange;
+            margin-bottom: 20px;
+          }
+    
+          p{
+            font-family: 'Outfit', sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5;
+            color:rgba(255, 255, 255, 0.792);
+          }
+    
+          .content_top{
+            margin-bottom: 20px;
+          }
+          .content_bottom{
+            width: 380px;
+          }
+          
+         
+        }
+      }
+    }
+    
+    
+  }
+}
+
+// ---------- MOBILE ----------
+@media (max-width: 767px) {
+  .hero {
+    display: flex;
+    height: 100vh;
+    margin-bottom: 150px;
+
+    .hero__content {
+      width: 100%;
+      
+  
+      .hero_black {
+        display: none;
+      }
+  
+      .hero__title {
+        position: absolute;
+        top: 45%;
+        padding: 1.5rem;
+        font-size: 5.5rem;
+        line-height: 0.9;
+        font-family: 'Big Shoulders Display', sans-serif;
+        font-weight: bold;
+        
+      }
+  
+      .hero__description {
+        position: absolute;
+        top: 70%;
+        padding: 1.5rem;
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.4rem;
+        color: #444444;
+        line-height: 1.6;
+        width: 90%;
+        
+      }
+  
+      .hero__button {
+        top: 94%;
+        position: absolute;
+        margin-left: 5%;
+        background-color: $black;
+        color: $white;
+        text-decoration: none;
+        padding: 2rem;
+        font-weight: bold;
+        font-size: 1.6rem;
+        font-family: 'Big Shoulders Display', sans-serif;
+        font-weight: 700;
+        letter-spacing: 5px;
+
+        .arrow {
+          background-color: $orange;
+          position: absolute;
+          top:0;
+          left: 95%;
+          padding: 2rem;
+          font-family: 'Helvetica Neue', sans-serif;
+        }
+        
+      }
+  
+      .hero__image{
+        width: 100%;
+        height: 70%;
+  
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
+      }
+      
+    }
+  }
+
+  .gallery-intro {
+    
+    padding: 3rem;
+   
+    position: relative;
+    margin-bottom: 650px;
+  
+    .text-block {
+      width: 100%;
+      position: absolute;
+      top: 460%;
+      z-index: 2;
+  
+      h2 {
+        margin-bottom: 40px;
+        font-size: 4rem;
+        width: 300px;
+        line-height: 0.9;
+        font-family: 'Big Shoulders Display', sans-serif;
+      }
+  
+      p {
+        color: $gray;
+        font-family: 'Outfit', sans-serif;
+        line-height: 1.6;
+        font-size: 1.5rem;
+        width: 90%;
+      }
+    }
+  
+    .gallery-intro-img{
+      width: 100%;
+      position: absolute;
+      top: 0%;
+      
+      
+      
+      img {
+        width: 90%;
+        margin-top: 1rem;
+        height: 400px;
+      }
+    }
+  }
+
+  .gallery-images {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    position: relative;
+    margin-bottom: 100px;
+
+    .gallery-images-left{
+      width: 100%;
+      margin-left: 0;
+
+      img {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+      }
+    } 
+    
+    .gallery-images-right {
+      width: 100%;
+      margin-left: 0;
+
+      img {
+        width: 100%;
+        height: 350px;
+        padding: 1rem;
+        object-fit: cover;
+      }
+
+      .inspiration-block {
+        width: 94%;
+        height: 350px;
+        margin-left: 16px;
+        background-color: $black;
+        color: $white;
+        padding: 2rem;
+    
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+          font-size: 3.5rem;
+          width: 250px;
+          line-height: 1.1;
+          font-family: 'Big Shoulders Display', sans-serif;
+          font-weight: 700;
+        }
+    
+        p {
+          font-family: 'Outfit', sans-serif;
+          font-weight: 400;
+          font-size: 1.4rem;
+          color: #ccc;
+          line-height: 1.6;
+        }
+      
+      }
+    }
+  }
+
+  .footer {
+    background-color: $black;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    height: auto;
+  
+    &__brand {
+      font-weight: bold;
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+      width: 270px;
+      font-family: 'Outfit', sans-serif;
+    }
+  
+    &__text {
+      max-width: 350px;
+      text-align: left;
+     
+      margin-top: 10px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #ccc;
+  
+    }
+  
+    &__socials {
+      margin: 0%;
+      margin-top: 40px;
+  
+      img{
+       margin-left: 18px;
+  
+      }
+      
+    }
+  }
+
+  .location{
+
+    .footer{
+      background-color: $orange;
+      color: $black;
+  
+      p{
+        color: $black;
+        font-size: 1.2rem;
+        width:340px;
+      }
+  
+      &__brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        width: 200px;
+       
+      }
+  
+      &__socials {
+        margin-bottom: 30px;
+        display: flex;
+    
+        img{
+          width: 18px;
+        }
+        
+      }
+    }
+  
+    .loc_header{
+      display: flex;
+      height: 100vh;
+    
+      .loc_header_content{
+        display: flex;
+        height: 100vh;
+        margin-bottom: 50px;
+    
+        .botton_back{
+          top: 0;
+          left: 10%;
+          position: absolute;
+          background-color: $black;
+          color: $white;
+          font-size: 1.4rem;
+          text-decoration: none;
+          padding: 2.5rem 3.5rem;
+          font-weight: bold;
+    
+          .arrow {
+            background-color: $orange;
+            position: absolute;
+            top:0px;
+            left: -20%;
+            padding: 2.5rem;
+          }
+        }
+    
+        .fondo {
+          width: 100%;
+          object-fit: cover;
+        }
+    
+        .localizador{
+          position: absolute;
+          top: 46%;
+          left: 44%;
+        }
+      }
+    }
+    
+    .loc_main{
+      background-color: $black;
+
+      .loc_main_content{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Big Shoulders Display', sans-serif;
+        font-weight: 700;
+        color: $white;
+        height: 550px;
+        text-align: left;
+        margin-left: 30px;
+        
+    
+        .titulo{
+          width: 100%;
+         
+          font-weight: bold;
+          font-size: 4rem;
+          
+        }
+    
+        .contenido{
+          width: 100%;
+         
+          h2{
+            color: $orange;
+            margin-bottom: 20px;
+            font-size: 2.4rem;
+          }
+    
+          p{
+            font-family: 'Outfit', sans-serif;
+            font-weight: 400;
+            font-size: 1.3rem;
+            line-height: 1.4;
+            color:rgba(255, 255, 255, 0.792);
+          }
+    
+          .content_top{
+            margin-bottom: 20px;
+          }
+          .content_bottom{
+            width: 380px;
+          }
+          
+         
+        }
+      }
+    }
+    
+    
+  }
+
+  .loc_main_content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .titulo {
+      font-size: 3rem;
+      margin: 2rem 0;
+    }
+
+    .contenido {
+      position: static;
+      width: 90%;
+      margin: 0 auto;
+
+      .content_bottom {
+        width: 100%;
+      }
+    }
+  }
+}

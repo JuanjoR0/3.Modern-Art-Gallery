@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="location">
+
+    <header class="loc_header">
+        <div class="loc_header_content">
+            <a href="#location" class="botton_back"><span class="arrow"><</span>BACK TO HOME</a> 
+            <img class="fondo" src="../img/Bitmap.png" alt="mapa">
+            <img class="localizador" src="../img/localizador.svg" alt="localizador">
+        </div>
+    </header>
+
+    <main class="loc_main">
+        <div class="loc_main_content">
+            <h1 class="titulo">OUR <br>LOCATION</h1>
+            <div class="contenido">
+                <h2>99 KING STREET</h2>
+                <p class="content_top">Newport <br>RI 02840 <br>United States of America <br></p>
+                <p class="content_bottom">Our newly opened gallery is located near the Edward King House on 99 King Street,
+                the Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm.</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-space">
+
+
+    </div>
+  
+    <script>
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById('footer-space').innerHTML = html;
+        })
+        .catch(error => console.error('Error cargando el footer:', error));
+    </script>
+
+    <script src="../js/index.js"></script>
+
+</body>
+</html>
